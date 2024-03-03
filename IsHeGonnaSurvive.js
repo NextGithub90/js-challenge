@@ -8,7 +8,12 @@
 // }
 // console.log(hero(10, 5));
 
-function hero(bullets, dragons) {
+/* function hero(bullets, dragons) {
   return bullets >= dragons * 2;
 }
 console.log(hero(6, 3));
+ */
+function myFunction(a, b) {
+  return typeof a;
+}
+console.log(myFunction(1));
