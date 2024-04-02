@@ -73,7 +73,7 @@ Tentu! Berikut adalah penjelasan singkat dan contoh kode untuk setiap metode ter
 Jadi, intinya map itu untuk 'mengubah' tiap item dalam array, filter itu untuk 'menyaring' item dalam array berdasarkan kondisi tertentu, dan find itu untuk 'mencari' item pertama yang memenuhi kondisi tertentu. Semoga lebih paham ya bro!
 
 
-// catatatan
-/* let nama = ['satu']
-let hasil = nama.push('dua')
-console.log(nama) */
+math.Florr = pembulatan ke bawaah
+math.ceil = pembulatan ke atas
+math.round = pembulatan terdekat
+
