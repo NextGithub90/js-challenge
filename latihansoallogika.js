@@ -99,10 +99,10 @@ console.log(cariAngka(array, target)); // Output: 5 */
 //   return z;
 // }
 // console.log(countBy(2, 5));
-// function countBy(x, n) {
-//  return [...Array(n)].map((e, i) => (i +1) * x)
-// }
-// console.log(countBy(2, 5));
+function countBy(x, n) {
+  return [...Array(n)].map((e, i) => (i + 1) * x);
+}
+console.log(countBy(2, 5));
 
 // soal 1
 // function grow(x) {
@@ -221,14 +221,94 @@ console.log(countBy(2, 5));
 // console.log(countSheep(3));
 
 // soal ke 9
+// var max = function (list) {
+//   let result = list[0];
+//   for (let i = 0; i < list.length; i++) {
+//     // return list[i]
+//     if (result < list[i]) {
+//       result = list[i];
+//     }
+//   }
+//   return result;
+// };
+// console.log(max([4, 6, 2, 1, 9, 63, -134, 566]));
+
+// var min = function (list) {
+//   let result = list[0];
+//   for (let i = 0; i < list.length; i++) {
+//     // return list[i]
+//     if (result > list[i]) {
+//       result = list[i];
+//     }
+//   }
+//   return result;
+// };
+// console.log(min([4, 6, 2, 1, 9, 63, -134, 566, -699]));
+
 var max = function (list) {
+  return list.sort((a, b) => b - b);
+};
+console.log(max([4, 6, 2, 1, 9, 63, -134, 566]));
+
+var min = function (list) {
   let result = list[0];
   for (let i = 0; i < list.length; i++) {
     // return list[i]
-    if (result < list[i]) {
+    if (result > list[i]) {
       result = list[i];
     }
   }
   return result;
 };
-console.log(max([4, 6, 2, 1, 9, 63, -134, 566]));
+console.log(min([4, 6, 2, 1, 9, 63, -134, 566, -699]));
+
+// soal ke 10
+function stringToArray(string) {
+  // code code code
+  return string.split(" ");
+}
+console.log(stringToArray("Robin Singh"));
+
+// soal ke 11
+const rps = (p1, p2) => {
+  if (p1 == p2) return "Draw!";
+  let rules = { rock: "scissors", paper: "rock", scissors: "paper" };
+
+  if (p2 == rules[p1]) {
+    return "player 1 won!";
+  } else {
+    return "player 2 won!";
+  }
+};
+console.log(rps("rock", "scissors"));
+
+// acak
+function solution(str) {
+  let result = [];
+  for (let i = 0; str.length > i; i++) {
+    result.push(str[i]);
+  }
+  return result.reverse().join("");
+}
+console.log(solution("halo"));
+
+// soal ke 12
+
+function arrayPlusArray(arr1, arr2) {
+  var suma = 0;
+  for (var i = 0; i < arr1.length; i++) suma += arr1[i];
+  for (var i = 0; i < arr2.length; i++) suma += arr2[i];
+  return suma;
+}
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+
+function getCount(str) {
+  let result = 0;
+  str.split("").forEach(function (v) {
+    if ((v == "a") | (v == "i") | (v == "u") | (v == "e") | (v == "o")) {
+      result = result + 1;
+    }
+  });
+  return result;
+}
+console.log(getCount("abracad"));

@@ -77,3 +77,7 @@ math.Florr = pembulatan ke bawaah
 math.ceil = pembulatan ke atas
 math.round = pembulatan terdekat
 
+// operator || selagi salah satu nilai bernilai true hasilnya akan tetap true
+// operator && selagi salah satu nilai bernilai false hasilnya akan tetap false
+
+// penggambungan array menggunakan method : concat
