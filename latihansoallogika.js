@@ -312,3 +312,46 @@ function getCount(str) {
   return result;
 }
 console.log(getCount("abracad"));
+
+// soal ke 13
+
+// function findNeedle(haystack) {
+//   let hasil = "found the needle at position 3";
+//   return haystack.map(function (v, i) {
+//     console.log(v);
+//     console.log(i);
+//     if (v == "needle") {
+//       return hasil;
+//     }
+//   });
+// }
+
+// function findNeedle(haystack) {
+//   let hasil = "found the needle at position ";
+//   for(let i = 0; i < haystack.length; i++) {
+//     if(haystack[i] == 'needle') {
+//       return hasil += i;
+//     }
+//   }
+// }
+
+// function findNeedle(haystack) {
+//   return `found ${haystack.indexOf('needle')}`
+// }
+// console.log(findNeedle([1,2,3,4,5,6,7,8,8,7,5,4,3,4,5,6,67,5,5,3,3,4,2,34,234,23,4,234,324,324,'needle',1,2,3,4,5,5,6,5,4,32,3,45,54]));
+
+// soal ke 14
+function doubleChar(str) {
+  // Your code here
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    result = result + str[i] + str[i];
+  }
+  return result;
+}
+
+function doubleChar(str) {
+  // Your code here
+  return str.split("").forEach((a, b) => b == "b");
+}
+console.log(doubleChar("abcd"));

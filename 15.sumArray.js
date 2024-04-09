@@ -17,3 +17,13 @@ function sumArray(array) {
     .reduce((acc, curr) => acc + curr);
 }
 console.log(sumArray([6, 2, 1, 8, 10]));
+
+// soal ke 14
+function sumArray(array) {
+ let result = 0
+ if ( array == null || array == '' || array == undefined) return 0
+ 
+}
+ 
+  console.log(sumArray([6, 2, 1, 8, 10]));
+  
