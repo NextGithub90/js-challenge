@@ -350,8 +350,41 @@ function doubleChar(str) {
   return result;
 }
 
-function doubleChar(str) {
-  // Your code here
-  return str.split("").forEach((a, b) => b == "b");
+// soal ke 15
+function reverseWords(str) {
+  // Go for it
+  let result = [];
+  for (let i = 0; i < str.length; i++) {
+    let hasil = result.push(str[i]);
+  }
+  return result.reverse().join("").split(" ").reverse().join(" ");
 }
-console.log(doubleChar("abcd"));
+console.log(reverseWords("double spaced  words"));
+
+const huruf = ["A", "B", "C", "D", "E"];
+huruf.reverse();
+console.log(huruf); // Output: ["E", "D", "C", "B", "A"]
+
+// soal ke 16
+
+// function countSheeps(sheep) {
+//   // TODO
+//   let result = 0;
+//   for (let i = 0; i < sheep.length; i++) {
+//     if (sheep[i] === true) {
+//       result = result + 1;
+//     } else {
+//       result += 0;
+//     }
+//   }
+//   return result;
+// }
+// console.log(countSheeps([true,true,true,false,true,true,true,true,true,false,true,false,true,false,false,true,true,true,true,true,false,false,true,true]));
+
+function countSheeps(sheep) {
+  // TODO
+  let result = 0;
+  return sheep.map((x) => (x === true ? 1 : 0)).reduce((a, b) => a + b, 0);
+  // return result
+}
+console.log(countSheeps([true, true, true, true, true, false, true, true]));
