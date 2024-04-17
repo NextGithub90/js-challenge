@@ -380,11 +380,22 @@ console.log(huruf); // Output: ["E", "D", "C", "B", "A"]
 //   return result;
 // }
 // console.log(countSheeps([true,true,true,false,true,true,true,true,true,false,true,false,true,false,false,true,true,true,true,true,false,false,true,true]));
-
-function countSheeps(sheep) {
-  // TODO
-  let result = 0;
-  return sheep.map((x) => (x === true ? 1 : 0)).reduce((a, b) => a + b, 0);
-  // return result
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
 }
 console.log(countSheeps([true, true, true, true, true, false, true, true]));
+
+var number = function (array) {
+  ///your awesome code here
+  let result = [];
+  if (array.length === 0) {
+    return [];
+  } else {
+    for (var j = 0; j < array.length; j++) {
+      result.push(j + 1 + ": " + array[j]);
+    }
+  }
+  return result;
+};
+
+console.log(number(["a", "b", "c"]));
