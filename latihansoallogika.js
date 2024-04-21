@@ -399,3 +399,49 @@ var number = function (array) {
 };
 
 console.log(number(["a", "b", "c"]));
+let result = [];
+let angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
+for (let i = 0; i < angka.length; i++) {
+  if (angka[i] >= 3) {
+    result.push(angka[i]);
+  }
+}
+console.log(result);
+
+// soal ke 17
+String.prototype.toJadenCase = function () {
+  return this.toLowerCase()
+    .split(" ")
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(" ");
+};
+
+const inputText = "How can mirrors be real if our eyes arent real";
+const jadenCaseText = inputText.toJadenCase();
+console.log(jadenCaseText); // Output: "How Can Mirrors Be Real If Our Eyes Arent Real"
+
+// function isIsogram(str) {
+//   //...
+//   str = str.toLowerCase();
+//   let charSet = new Set();
+//   for (let i = 0; i < str.length; i++) {
+//     if (charSet.has(str[i])) {
+//       return false;
+//     }
+//     charSet.add(str[i]);
+//   }
+//   return true;
+// }
+// console.log(isIsogram("bka"));
+
+function isIsogram(str) {
+  let chartset = new Set();
+  let vokal = "aiueo";
+  for (let i = 0; i < str.length; i++) {
+    if (vokal.includes(str[i])) {
+      chartset.add(str[i]);
+    }
+  }
+  return chartset.size;
+}
+console.log(isIsogram("abanig"));
