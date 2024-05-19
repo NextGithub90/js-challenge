@@ -45,27 +45,8 @@
 // }
 // console.log(boolToWord(true));
 
-function maps(x) {
-  let hasil = [];
-  x.forEach(function (y) {
-    hasil.push(y * 2);
-  });
-  return hasil;
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+  return [...arguments].reduce((a, b) => a + b);
 }
-
-console.log(maps([1, 2, 3])); // Output: [2, 4, 6]
-
-// let halo = 2
-// console.log(halo)
-
-function simpleMultiplication(number) {
-  return number % 2 == 0 ? number * 8 : number * 9;
-}
-console.log(simpleMultiplication(0), 45, "");
-console.log(simpleMultiplication(1), 9);
-
-function invert(array) {
-  // return array.map((angka) => angka * -1)
-  return array.map((x) => (x == 0 ? x : -x));
-}
-console.log(invert([-1, -2, -3, -4, 5]));
+console.log(goals(1, 1, 1));
